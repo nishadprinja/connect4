@@ -1,26 +1,50 @@
-// $(function(){
-// 	console.log('We\'re loaded');
-// })
-
 window.onload = function() {
-	console.log('We\'re loaded');
+	var turn = 1;
+	$('#turntext').text(turn);
+
+	function gamePlay(cellsInColumn, t) {
+		for (i = 0; i < cellsInColumn.length; i++) {
+		
+			if (t == 1) { 
+				if(cellsInColumn.eq(i).hasClass('blank')) {
+					cellsInColumn.eq(i).attr('class', 'green')
+					break;
+				}
+			}
+
+			else if (t == 2) {
+				if(cellsInColumn.eq(i).hasClass('blank')) {
+					cellsInColumn.eq(i).attr('class', 'blue')
+					break;
+				}
+			}
+		}
+		figureOutWinner();
+	}
+
+	function executeTurn() {
+		if (turn == 1) {
+			//drop green coin
+			gamePlay($(this).children(), turn)
+
+			//this happens last
+			turn = 2
+			$('#turntext').text(turn);
+		}
+
+		else if (turn == 2) {
+			//drop blue coin
+			gamePlay($(this).children(), turn)
+
+			turn = 1
+			$('#turntext').text(turn);
+		}
+	}
+
+	$("#col-a, #col-b, #col-c, #col-d, #col-e, #col-f, #col-g").on('click', executeTurn);
+	
 }
 
-var a1 = document.getElementById('a1');
-var turn = 0
 
-function gamePlay() {
-a1.setAttribute('class', 'green');
 
-	// if (turn == 0) {
 
-	// 	turn = 1
-	// }
-
-	// else if (turn == 1) {
-
-	// 	turn = 0
-	// }
-}
-
-a1.addEventListener('click', gamePlay);

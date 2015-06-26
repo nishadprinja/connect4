@@ -1,19 +1,97 @@
-#board {  	
-  	display: flex;
-  	justify-content: center;
-  	min-width: 900px;
-/*	z-index: 1*/
-}
+/*.blank{
+	background-color: #8fa479;
+}*/
 
 .green {
-	background-color: green;
+	background-color: #e3cc89;
 }
+
+.blue {
+	background-color: #475f5f;
+}
+
+#board {
+	position: relative;
+	margin: 0 auto 0 auto;
+	width: 800px;
+	height: 640px;
+}
+
+#imgbckdiv {  	
+	position: absolute;
+	width: 800px;
+	height: 640px;
+	z-index: 1;
+}
+
+#imgtopdiv {  	
+	position: absolute;
+	width: 800px;
+	height: 640px;
+	z-index: 2;
+}
+
+#columns-n-buttons {
+	position: absolute;
+	width: 800px;
+	height: 640px;
+	z-index: 3;
+}
+
+ #col-a {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 38px;
+ }
+
+ #col-b {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 145px;
+ }
+
+  #col-c {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 252px;
+ }
+
+  #col-d {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 360px;
+ }
+
+  #col-e {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 472px;
+ }
+
+  #col-f {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 580px;
+ }
+
+  #col-g {
+  	position: absolute;
+  	width: 80px;
+  	height: 640px;
+  	left: 685px;
+ }
+
 
 #a1 {
 	position: relative;
 	width: 80px;
 	height: 80px;
-	right: 760px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -21,10 +99,8 @@
 
 #a2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 760px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -32,10 +108,8 @@
 
 #a3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 760px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -43,10 +117,8 @@
 
 #a4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 760px;
 	top: -5px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -54,10 +126,8 @@
 
 #a5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 760px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -65,10 +135,8 @@
 
 #a6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 760px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -76,10 +144,8 @@
 
 #b1 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 735px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -87,10 +153,8 @@
 
 #b2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 735px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -98,10 +162,8 @@
 
 #b3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 735px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -109,10 +171,8 @@
 
 #b4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 735px;
 	top: -5px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -120,10 +180,8 @@
 
 #b5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 735px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -131,10 +189,8 @@
 
 #b6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 735px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -142,10 +198,8 @@
 
 #c1 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 708px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -153,10 +207,8 @@
 
 #c2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 708px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -164,10 +216,8 @@
 
 #c3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 708px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -175,10 +225,8 @@
 
 #c4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 708px;
 	top: -5;
 	border-radius: 70%;
 /*	z-index: 1*/
@@ -186,10 +234,8 @@
 
 #c5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 708px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -197,10 +243,8 @@
 
 #c6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 708px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -208,10 +252,8 @@
 
 #d1 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 680px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -219,10 +261,8 @@
 
 #d2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 680px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -230,10 +270,8 @@
 
 #d3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 680px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -241,10 +279,8 @@
 
 #d4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 680px;
 	top: -5px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -252,10 +288,8 @@
 
 #d5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 680px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -263,10 +297,8 @@
 
 #d6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 680px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -274,10 +306,8 @@
 
 #e1 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 650px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -285,10 +315,8 @@
 
 #e2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 650px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -296,10 +324,8 @@
 
 #e3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 650px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -307,10 +333,8 @@
 
 #e4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 650px;
 	top: -5px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -318,10 +342,8 @@
 
 #e5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 650px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -329,10 +351,8 @@
 
 #e6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 650px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -340,10 +360,8 @@
 
 #f1 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 620px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -351,10 +369,8 @@
 
 #f2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 620px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -362,10 +378,8 @@
 
 #f3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 620px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -373,10 +387,8 @@
 
 #f4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 620px;
 	top: -5px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -384,10 +396,8 @@
 
 #f5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 620px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -395,10 +405,8 @@
 
 #f6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 620px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -406,10 +414,8 @@
 
 #g1 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 595px;
 	top: 540px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -417,10 +423,8 @@
 
 #g2 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 595px;
 	top: 365px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -428,10 +432,8 @@
 
 #g3 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 595px;
 	top: 183px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -439,10 +441,8 @@
 
 #g4 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 595px;
 	top: -5px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -450,10 +450,8 @@
 
 #g5 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 595px;
 	top: -190px;
 	border-radius: 70%
 /*	z-index: 1*/
@@ -461,10 +459,8 @@
 
 #g6 {
 	position: relative;
-	background-color: black;
 	width: 80px;
 	height: 80px;
-	right: 595px;
 	top: -378px;
 	border-radius: 70%
 /*	z-index: 1*/
