@@ -3,19 +3,50 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="css/style.css"></style>
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
-	<p>Current Player's Turn<span id="turntext"></span></p>
+	<div id="notyet">
+	<p>Current Player's Turn: <span id="turntext"></span></p>
+	</div>
 <div id="board">
+	<div id="menu-active">
+		<div id="menu-background"><img src="images/menubackground.png" />
+		</div>
+		<div id="startplay">
+			<button>Start Game</button>
+		</div>
+		<div id="menuheader">
+			<h1>Connect Four</h1>
+		</div>
+		<div id="menuoptions">
+			<p>Player 1:<br>
+			Player 2:
+			</p>
+		</div>
+		<div id="namebox">
+			<input id="player1"/><br><br>
+			<input id="player2"/>
+		</div>
+	</div>
 		<div id="imgbckdiv">
-			<img id="img" src="images/connect4_background.png" />
+			<img src="images/connect4_background.png" />
 		</div>
 		<div id="imgtopdiv">
-			<img id="img" src="images/connect4_overlay.png" />
+			<img src="images/connect4_overlay.png" />
 		</div>
-	<div id="columns-n-buttons">
+		<div class="player-1-wins">
+			<img src="images/player1wins.png" />
+		</div>
+		<div class="player-2-wins">
+			<img src="images/player2wins.png" />
+		</div>
+		<div class="gameover">
+			<img src="images/gameoverbackground.png" />
+		</div>
+	<div id="hidden">
 		<div id="col-a">
 			<div id="a1" class="blank"></div>
 			<div id="a2" class="blank"></div>
@@ -75,6 +106,7 @@
 	</div>
 </div>
 
+<script src="js/menu.js"></script>
 <script src="js/winningCombinations.js"></script>
 <script src="js/game.js"></script>
 

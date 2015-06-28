@@ -128,11 +128,13 @@ function figureOutWinner () {
 						comboCount2++;
 					}
 		if (comboCount1 == 4){
-			alert('Player 1 wins!')
+			$('.gameover').attr('class', 'gameover-background');
+			$('.player-1-wins').attr('class', 'winner1');
 			}
 
 		else if (comboCount2 == 4){
-			alert('Player 2 wins!')
+			$('.gameover').attr('class', 'gameover-background');
+			$('.player-2-wins').attr('class', 'winner2');
 			}
 				})
 			})
