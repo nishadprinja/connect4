@@ -129,12 +129,18 @@ function figureOutWinner () {
 					}
 		if (comboCount1 == 4){
 			$('.gameover').attr('class', 'gameover-background');
+			$('#currentturn').attr('id','notyet');
 			$('.player-1-wins').attr('class', 'winner1');
+			var player1 = $('#player1').val()
+			$('.winner1 p').text(name + ' Wins');
 			}
 
 		else if (comboCount2 == 4){
 			$('.gameover').attr('class', 'gameover-background');
+			$('#currentturn').attr('id','notyet');
 			$('.player-2-wins').attr('class', 'winner2');
+			var player2 = $('#player2').val()
+			$('.winner2 p').text(player2 + ' Wins');
 			}
 				})
 			})

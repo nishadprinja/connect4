@@ -10,6 +10,38 @@ body {
 	background-color: #475f5f;
 }
 
+#pokegif1 {
+	position: relative;
+  	width: 250px;
+  	height: 320px;
+  	float: left;
+  	margin: 0 auto 0 auto;
+  	left: 60px;
+  	top: 200px;
+}
+
+#pokegif1 p {
+  	font-family: Amatic SC;
+  	font-size: 36px;
+  	margin: 0;
+}
+
+#pokegif2 {
+	position: relative;
+  	width: 250px;
+  	height: 320px;
+  	float: right;
+  	margin: 0 auto 0 auto;
+  	right: 20px;
+  	top: 200px;
+}
+
+#pokegif2 p {
+  	font-family: Amatic SC;
+  	font-size: 36px;
+  	margin: 0;
+}
+
 #notyet {
 	position: relative;
 	margin: 0 auto 0 auto;
@@ -221,15 +253,29 @@ body {
 .winner1 {
 	position: absolute;
 	width: 800px;
-	height: 640px;
+	height: 100px;
+	top: 200px;
 	z-index: 101;
+}
+
+.winner1 p {
+	font-family: Amatic SC;
+	font-size: 72px;
+	text-align: center;
 }
 
 .winner2 {
 	position: absolute;
 	width: 800px;
-	height: 640px;
+	height: 100px;
+	top: 200px;
 	z-index: 101;
+}
+
+.winner2 p {
+	font-family: Amatic SC;
+	font-size: 72px;
+	text-align: center;
 }
 
 .gameover-background {

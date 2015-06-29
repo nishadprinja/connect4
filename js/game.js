@@ -1,12 +1,8 @@
 window.onload = function() {
 
 	var turn = 1;
-	var name = $('#player1').val();
-	$('#turntext').text(name);
-	$('#startplay button').on('click', gameOn)
 	function gamePlay(cellsInColumn, t) {
 		for (i = 0; i < cellsInColumn.length; i++) {
-		
 			if (t == 1) { 
 				if(cellsInColumn.eq(i).hasClass('blank')) {
 					cellsInColumn.eq(i).attr('class', 'green')
@@ -22,16 +18,6 @@ window.onload = function() {
 			}
 		}
 		figureOutWinner();
-	}
-
-	function gameOn() {
-		$('#startplay').attr('id', 'go');
-		$('#menuheader').attr('id', 'headerback');
-		$('#menuoptions').attr('id', 'optionsback');
-		$('#namebox').attr('id', 'nameback');
-		$('#menu-background').attr('id', 'inactive-menu');
-		$('#menu-active').attr('id', 'menu');
-		$('#notyet').attr('id', 'currentturn');
 	}
 
 	function executeTurn() {
@@ -56,7 +42,6 @@ window.onload = function() {
 	}
 
 	$("#col-a, #col-b, #col-c, #col-d, #col-e, #col-f, #col-g").on('click', executeTurn);
-	
 }
 
 
