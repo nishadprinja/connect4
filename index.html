@@ -1,1 +1,120 @@
-My Page
+<!DOCTYPE>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css"></style>
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<div id="pokegif1">
+		<p></p>
+	</div>
+	<div id="pokegif2">
+		<p></p>
+	</div>
+	<div id="notyet">
+	<p>Current Player's Turn: <span id="turntext"></span></p>
+	</div>
+<div id="board">
+	<div id="menu-active">
+		<div id="menu-background"><img src="images/menubackground.png" />
+		</div>
+		<div id="startplay">
+			<button>Start Game</button>
+		</div>
+		<div id="menuheader">
+			<h1>Connect Four</h1>
+		</div>
+		<div id="menuoptions">
+			<p>Player 1:<br>
+			Player 2:
+			</p>
+		</div>
+		<div id="namebox">
+			<input id="player1"/><br><br>
+			<input id="player2"/>
+		</div>
+	</div>
+		<div id="imgbckdiv">
+			<img src="images/connect4_background.png" />
+		</div>
+		<div id="imgtopdiv">
+			<img src="images/connect4_overlay.png" />
+		</div>
+		<div class="player-1-wins">
+			<p></p>
+		</div>
+		<div class="player-2-wins">
+			<p></p>
+		</div>
+		<div class="gameover">
+			<img src="images/gameoverbackground.png" />
+		</div>
+	<div id="hidden">
+		<div id="col-a">
+			<div id="a1" class="blank"></div>
+			<div id="a2" class="blank"></div>
+			<div id="a3" class="blank"></div>
+			<div id="a4" class="blank"></div>
+			<div id="a5" class="blank"></div>
+			<div id="a6" class="blank"></div>
+		</div>
+		<div id="col-b">
+			<div id="b1" class="blank"></div>
+			<div id="b2" class="blank"></div>
+			<div id="b3" class="blank"></div>
+			<div id="b4" class="blank"></div>
+			<div id="b5" class="blank"></div>
+			<div id="b6" class="blank"></div>
+		</div>
+		<div id="col-c">
+			<div id="c1" class="blank"></div>
+			<div id="c2" class="blank"></div>
+			<div id="c3" class="blank"></div>
+			<div id="c4" class="blank"></div>
+			<div id="c5" class="blank"></div>
+			<div id="c6" class="blank"></div>
+		</div>
+		<div id="col-d">
+			<div id="d1" class="blank"></div>
+			<div id="d2" class="blank"></div>
+			<div id="d3" class="blank"></div>
+			<div id="d4" class="blank"></div>
+			<div id="d5" class="blank"></div>
+			<div id="d6" class="blank"></div>
+		</div>
+		<div id="col-e">
+			<div id="e1" class="blank"></div>
+			<div id="e2" class="blank"></div>
+			<div id="e3" class="blank"></div>
+			<div id="e4" class="blank"></div>
+			<div id="e5" class="blank"></div>
+			<div id="e6" class="blank"></div>
+		</div>
+		<div id="col-f">
+			<div id="f1" class="blank"></div>
+			<div id="f2" class="blank"></div>
+			<div id="f3" class="blank"></div>
+			<div id="f4" class="blank"></div>
+			<div id="f5" class="blank"></div>
+			<div id="f6" class="blank"></div>
+		</div>
+		<div id="col-g">
+			<div id="g1" class="blank"></div>
+			<div id="g2" class="blank"></div>
+			<div id="g3" class="blank"></div>
+			<div id="g4" class="blank"></div>
+			<div id="g5" class="blank"></div>
+			<div id="g6" class="blank"></div>
+		</div>
+	</div>
+</div>
+
+<script src="js/menu.js"></script>
+<script src="js/winningCombinations.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>
